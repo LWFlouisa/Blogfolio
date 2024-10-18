@@ -1,4 +1,4 @@
-Sitemap: https://uploadedfairywebfiction.loophole.site/
+Sitemap: https://lwflouisa.github.io/Blogfolio
 
 User-agent: *
 Disallow: /
