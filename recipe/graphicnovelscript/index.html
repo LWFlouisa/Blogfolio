@@ -9,19 +9,9 @@
   <meta name="robots" content="noimageindex">
   <meta name="robots" content="notranslate">
 
-  <script>
-  function disableRightClick(event) {
-    if (event.button == 2) {
-      event.preventDefault(); // Prevent the default right-click behavior
-      alert("This page isn't for you to grab copies of, just click links normally.");
-      return false;
-    }
-  }
-  </script>
-
   <style>
     body {
-      background-image: linear-gradient(85deg, #000000, #1E2221, #3C4341, #232d26);
+      background-image: linear-gradient(75deg, #000000, #1E2221, #9EA1A0, #232d26);
       border: solid #17171F 12px;
 
       padding-left: 256px;
@@ -76,7 +66,7 @@
 
     .gunmetal {
       color: #F4F1E8;
-      background-image: linear-gradient(25deg, #000000, #636260, #7c7d7f);
+      background-image: linear-gradient(25deg, #000000, #1E2221, #232d26);
       font-family: Hafestran;
       font-size: 28px;
       font-weight: bold;
@@ -122,8 +112,6 @@ li a:hover {
 }
   </style>
 
-  <body oncontextmenu="disableRightClick(event)">
-
   <title>Portfolio</title>
 
   <a rel="me" href="https://comics.town/@lwflouisa">Comics Town</a>
@@ -142,8 +130,6 @@ li a:hover {
       <div>
        <div class="gunmetal">
        <hr />
-       <a class="gunmetal" href="https://lwflouisa.neocities.org/Blogfolio/mobile">mobile site</a>
-       <hr />
        <p>
        <a class="gunmetal" href='https://lwflouisa.neocities.org/Blogfolio/blog'>blog</a>
        <a class="gunmetal" href='https://lwflouisa.neocities.org/Blogfolio/stories'>btories</a>
@@ -151,11 +137,12 @@ li a:hover {
        <a class="gunmetal" href='https://lwflouisa.neocities.org/Blogfolio/backgroundart'>background Art</a>
        <a class="gunmetal" href='https://lwflouisa.neocities.org/Blogfolio/charactersketches'>character sketches</a>
        <a class="gunmetal" href='https://lwflouisa.neocities.org/Blogfolio/graphicnovelscript'>graphic novel script</a>
-       <a class="gunmetal" href="https://lwflouisa.neocities.org/Blogfolio/audiobookP2"">audiobook for part two</a>
+       <a class="gunmetal" href="https://lwflouisa.neocities.org/Blogfolio/audiobookP2"">Audiobook For Part Two</a>
        <a class="gunmetal" href='https://lwflouisa.neocities.org/Blogfolio/recipe'>ink gouche recipe</a>
        <a class="gunmetal" href='https://lwflouisa.neocities.org/Blogfolio/samplepages'>sample pages</a>
        <a class="gunmetal" href='https://lwflouisa.neocities.org/Blogfolio/coreconcepts'>core concepts</a>
        <a class="gunmetal" href='https://lwflouisa.neocities.org/Blogfolio/glossary'>glossary</a>
+       <a class="gunmetal" href='https://github.com/LWFlouisa/PalettierAssistant'>palettier assistant</a>
        <a class="gunmetal" href='https://lwflouisa.github.io/SRWeaverPodcast/'>podcast</a>
        <a class="gunmetal" href='https://lwflouisa.neocities.org/'>main site</a>
        </p>
@@ -202,13 +189,68 @@ li a:hover {
          </ul>-->
          <center>
 
-         <iframe title="Peertube Shorts" width="560" height="315" src="https://video.ploud.jp/video-playlists/embed/043025b0-b73f-46aa-9af9-f35b76c37b1c" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
+         <!--<iframe title="Uploaded Fairy Webfiction" width="560" height="315" src="https://video.ploud.jp/video-playlists/embed/0abc3420-0caf-470c-aa20-064f61bff682" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>-->
 
-         <iframe title="Uploaded Fairy Webfiction" width="560" height="315" src="https://video.ploud.jp/video-playlists/embed/0abc3420-0caf-470c-aa20-064f61bff682" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe><br />
+    <!-- Full Video Playlist -->
 
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=YXni2S1ZmrO8X0w0&amp;list=PLMt34jo_pGFcOEzi30Nq4AzJrKzq__Mxp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <video id="videoplaylist" preload="auto" tabindex="0" controls="" width="560px" height="315px">
+      <source src="https://lwflouisa.github.io/Blogfolio/videos/OldStoryboard.webm">
+    </video>
 
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=LPlWa4MI93eFTcbc&amp;list=PLMt34jo_pGFcqodjqImiFWeqqVPfZf0Mq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br />
+    <ul id="playlist">
+          <li class="active">
+             <a href="https://lwflouisa.github.io/Blogfolio/videos/OldStoryboard.webm">
+               Old Storyboard Chapter 1
+             </a>
+          </li>
+
+          <li class="active">
+             <a href="https://lwflouisa.github.io/Blogfolio/videos/WhatIsChronopunk.webm">
+               What Is Chronopunk?
+             </a>
+          </li>
+
+          <li class="active">
+            <a href="https://lwflouisa.github.io/Blogfolio/videos/ChromaticBlacksWithDoubleHarmonicOvertones.webm">
+              Chromatic Black With Double Harmonic Overtones
+            </a>
+          </li>
+      </ul>
+    
+    <!-- Shorts Playlist-->
+    <video id="videoplaylist" preload="auto" tabindex="0" controls="" width="560px" height="315px">
+      <source src="https://lwflouisa.github.io/Blogfolio/videos/NeonBloodWithHauntedSurf.mp4">
+    </video>
+
+    <ul id="playlist">
+          <li class="active">
+             <a href="https://lwflouisa.github.io/Blogfolio/videos/NeonBloodWithHauntedSurf.mp4">
+               neon blood and the haunted surf
+             </a>
+          </li>
+
+          <li>
+            <a href="https://lwflouisa.github.io/Blogfolio/videos/LotusAndTheCockroachTimelapse.mp4">
+               lotus and the cockroach
+            </a>
+          </li>
+
+          <li>
+            <a href="https://lwflouisa.github.io/Blogfolio/videos/TriangularCraft.webm">
+              triangular craft
+            </a>
+          </li>
+
+          <li>
+            <a href="https://lwflouisa.github.io/Blogfolio/videos/BlackWhiteYellowOrangeWebM.webm">
+              black, white, orange, and yellow
+            </a>
+          </li>
+
+      </ul>
+         </center>
+       </ol>
+
        <h3>New Updates</h3>
        <ol>
          <ul>
@@ -1124,6 +1166,4 @@ function run(song, videoplaylist, link){
 }
       </script>
       <script src="https://cdn.counter.dev/script.js" data-id="67dce6be-123b-4b00-9afb-7979dee1c804" data-utcoffset="-6"></script>
-
-  </body>
 </html>

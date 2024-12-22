@@ -9,10 +9,20 @@
   <meta name="robots" content="noimageindex">
   <meta name="robots" content="notranslate">
 
+  <script>
+  function disableRightClick(event) {
+    if (event.button == 2) {
+      event.preventDefault(); // Prevent the default right-click behavior
+      alert("This page isn't for you to grab copies of, just click links normally.");
+      return false;
+    }
+  }
+  </script>
+
   <style>
     body {
-      background-color: #000000;
-      border: solid #42423E 12px;
+      background-image: linear-gradient(85deg, #000000, #1E2221, #3C4341, #232d26);
+      border: solid #17171F 12px;
 
       padding-left: 256px;
       padding-right: 256px;
@@ -21,7 +31,7 @@
     }
     
     h1, h2, h3, h4, h5, h6, p, pre {
-      color: #b8b1b6;
+      color: #9EA1A0;
       font-family: monospace;
       font-size: 16px;
 
@@ -30,7 +40,7 @@
     }
 
     a {
-      color: #989e66;
+      color: #9EA1A0;
       font-family: monospace;
       font-size: 16px;
 
@@ -39,6 +49,7 @@
     }
 
     div {
+      background-image: linear-gradient(85deg, #000000, #1E2221, #3C4341, #232d26);
       background-color: #232d26;
       font-family: monospace;
       font-size: 16px;
@@ -47,8 +58,9 @@
       padding-bottom: 6px;
     }
 
-    .tags {
-      color: #C3BFBC;
+    .tags, .playlist {
+      background-image: linear-gradient(25deg, #000000, #1E2221, #232d26);
+      color: #9EA1A0;
 
       padding-left: 256px;
       padding-right: 256px;
@@ -56,14 +68,19 @@
 
     .translation {
       color: #C3BFBC;
+      background-image: linear-gradient(75deg, #000000, #4f0000);
 
       padding-left: 256px;
       padding-right: 256px;
     }
 
     .gunmetal {
-      background-color: #2b3035;
-      font-family: courier;
+      color: #F4F1E8;
+      background-image: linear-gradient(25deg, #000000, #636260, #7c7d7f);
+      font-family: Hafestran;
+      font-size: 28px;
+      font-weight: bold;
+      text-align: justified;
     }
 
     @font-face {
@@ -105,6 +122,8 @@ li a:hover {
 }
   </style>
 
+  <body oncontextmenu="disableRightClick(event)">
+
   <title>Portfolio</title>
 
   <a rel="me" href="https://comics.town/@lwflouisa">Comics Town</a>
@@ -123,20 +142,22 @@ li a:hover {
       <div>
        <div class="gunmetal">
        <hr />
+       <a class="gunmetal" href="https://lwflouisa.neocities.org/Blogfolio/mobile">mobile site</a>
+       <hr />
        <p>
-       <a href='https://lwflouisa.github.io/Blogfolio/blog'>Blog</a>
-       <a href='https://lwflouisa.github.io/Blogfolio/stories'>Stories</a>
-       <a href='https://lwflouisa.github.io/Blogfolio/poetry'>Poetry</a>
-       <a href='https://lwflouisa.github.io/Blogfolio/backgroundart'>Background Art</a>
-       <a href='https://lwflouisa.github.io/Blogfolio/charactersketches'>Character Sketches</a>
-       <a href='https://lwflouisa.github.io/Blogfolio/graphicnovelscript'>Graphic Novel Script</a>
-       <a href='https://lwflouisa.github.io/Blogfolio/recipe'>Ink Gouche Recipe</a>
-       <a href='https://lwflouisa.github.io/Blogfolio/samplepages'>Sample Pages</a>
-       <a href='https://lwflouisa.github.io/Blogfolio/coreconcepts'>Core Concepts</a>
-       <a href='https://lwflouisa.github.io/Blogfolio/glossary'>Glossary</a>
-       <a href='https://github.com/LWFlouisa/PalettierAssistant'>Palettier Assistant</a>
-       <a href='https://lwflouisa.github.io/SRWeaverPodcast/'>Podcast</a>
-       <a href='https://lwflouisa.github.io/'>Main Site</a>
+       <a class="gunmetal" href='https://lwflouisa.neocities.org/Blogfolio/blog'>blog</a>
+       <a class="gunmetal" href='https://lwflouisa.neocities.org/Blogfolio/stories'>btories</a>
+       <a class="gunmetal" href='https://lwflouisa.neocities.org/Blogfolio/poetry'>poetry</a>
+       <a class="gunmetal" href='https://lwflouisa.neocities.org/Blogfolio/backgroundart'>background Art</a>
+       <a class="gunmetal" href='https://lwflouisa.neocities.org/Blogfolio/charactersketches'>character sketches</a>
+       <a class="gunmetal" href='https://lwflouisa.neocities.org/Blogfolio/graphicnovelscript'>graphic novel script</a>
+       <a class="gunmetal" href="https://lwflouisa.neocities.org/Blogfolio/audiobookP2"">audiobook for part two</a>
+       <a class="gunmetal" href='https://lwflouisa.neocities.org/Blogfolio/recipe'>ink gouche recipe</a>
+       <a class="gunmetal" href='https://lwflouisa.neocities.org/Blogfolio/samplepages'>sample pages</a>
+       <a class="gunmetal" href='https://lwflouisa.neocities.org/Blogfolio/coreconcepts'>core concepts</a>
+       <a class="gunmetal" href='https://lwflouisa.neocities.org/Blogfolio/glossary'>glossary</a>
+       <a class="gunmetal" href='https://lwflouisa.github.io/SRWeaverPodcast/'>podcast</a>
+       <a class="gunmetal" href='https://lwflouisa.neocities.org/'>main site</a>
        </p>
        <hr />
        </div>
@@ -157,11 +178,7 @@ li a:hover {
 
        <div>
          <h3>Storyboard</h3>
-         <ol>
-           <ul>
-             <li><a href='https://lwflouisa.github.io/Blogfolio/posts/uploadedfairystoryboard'>Uploaded Fairy Storyboard</a></li>
-           </ul>
-         </ol>
+         <a href='https://lwflouisa.github.io/Blogfolio/posts/uploadedfairystoryboard'>Uploaded Fairy Storyboard</a>
        </div>
 
        <hr />
@@ -185,38 +202,18 @@ li a:hover {
          </ul>-->
          <center>
 
-         <iframe title="Uploaded Fairy Webfiction" width="560" height="315" src="https://video.ploud.jp/video-playlists/embed/0abc3420-0caf-470c-aa20-064f61bff682" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
+         <iframe title="Peertube Shorts" width="560" height="315" src="https://video.ploud.jp/video-playlists/embed/043025b0-b73f-46aa-9af9-f35b76c37b1c" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
 
-    <video id="videoplaylist" preload="auto" tabindex="0" controls="" width="100%" height="100%">
-      <source src="https://lwflouisa.github.io/Blogfolio/videos/NeonBloodWithHauntedSurf.mp4">
-    </video>
+         <iframe title="Uploaded Fairy Webfiction" width="560" height="315" src="https://video.ploud.jp/video-playlists/embed/0abc3420-0caf-470c-aa20-064f61bff682" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe><br />
 
-    <ul id="playlist">
-          <li class="active">
-             <a href="https://lwflouisa.github.io/Blogfolio/videos/NeonBloodWithHauntedSurf.mp4">
-               neon blood and the haunted surf
-             </a>
-          </li>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=YXni2S1ZmrO8X0w0&amp;list=PLMt34jo_pGFcOEzi30Nq4AzJrKzq__Mxp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-          <li>
-            <a href="https://lwflouisa.github.io/Blogfolio/videos/LotusAndTheCockroachTimelapse.mp4">
-               lotus and the cockroach
-            </a>
-          </li>
-
-          <li>
-            <a href="https://lwflouisa.github.io/Blogfolio/videos/TriangularCraft.webm">
-              triangular craft
-            </a>
-          </li>
-
-      </ul>
-         </center>
-       </ol>
-
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=LPlWa4MI93eFTcbc&amp;list=PLMt34jo_pGFcqodjqImiFWeqqVPfZf0Mq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br />
        <h3>New Updates</h3>
        <ol>
          <ul>
+           <li><a href="#emulsionpaints">2024 10 30 Emulsion Paints: Differences From Sumi Ink</a></li>
+           <li><a href="#updateontimelapsepublishing">2024 10 28 Update On Timelapse Publishing</a></li>
            <li><a href="#simplestapproach">2024 10 07 The Simpliest Approach</a></li>
            <li><a href='#test'>2024 10 07 I'm Not Sure What's Going On Here</a></li>
          </ul>
@@ -234,14 +231,14 @@ li a:hover {
        <h3>Archive</h3>
        <ol>
          <ul>
-           <li><a href='https://lwflouisa.github.io/Blogfolio/posts/flyingshoebus'>2024 10 06 Flying Shoe Bus</a></li>
-           <li><a href='https://lwflouisa.github.io/Blogfolio/posts/thedevilssamurai'>2024 10 02 The Devil's Samurai</a></li>
-           <li><a href='https://lwflouisa.github.io/Blogfolio/posts/gouachesticks'>2024 09 18 Ink Gouache And Ink Gouache Sticks</a></li>
-           <li><a href='https://lwflouisa.github.io/Blogfolio/posts/conceptforchaosknight'>2024 09 10 Soft Concept For Chaos Knight</a></li>
-           <li><a href='https://lwflouisa.github.io/Blogfolio/posts/softoilsticks'>2024 09 02 Soft Oil Sticks</a></li>
-           <li><a href='https://lwflouisa.github.io/Blogfolio/posts/whatisyumemoire'>2024 08 29 What Is Yumemoire?</a></li>
-           <li><a href='https://lwflouisa.github.io/Blogfolio/posts/soappainting'>2024 07 09 Soap Painting</a></li>
-           <li><a href='https://lwflouisa.github.io/Blogfolio/posts/surfergirlsketch'>2024 05 15 Surfer Girl Composite Sketch</a></li>
+           <li><a class="tags" href='https://lwflouisa.neocities.org/Blogfolio/posts/flyingshoebus'>2024 10 06 Flying Shoe Bus</a></li>
+           <li><a class="tags" href='https://lwflouisa.neocities.org/Blogfolio/posts/thedevilssamurai'>2024 10 02 The Devil's Samurai</a></li>
+           <li><a class="tags" href='https://lwflouisa.neocities.org/Blogfolio/posts/gouachesticks'>2024 09 18 Ink Gouache And Ink Gouache Sticks</a></li>
+           <li><a class="tags" href='https://lwflouisa.neocities.org/Blogfolio/posts/conceptforchaosknight'>2024 09 10 Soft Concept For Chaos Knight</a></li>
+           <li><a class="tags" href='https://lwflouisa.neocities.org/Blogfolio/posts/softoilsticks'>2024 09 02 Soft Oil Sticks</a></li>
+           <li><a class="tags" href='https://lwflouisa.neocities.org/Blogfolio/posts/whatisyumemoire'>2024 08 29 What Is Yumemoire?</a></li>
+           <li><a class="tags" href='https://lwflouisa.neocities.org/Blogfolio/posts/soappainting'>2024 07 09 Soap Painting</a></li>
+           <li><a class="tags" href='https://lwflouisa.neocities.org/Blogfolio/posts/surfergirlsketch'>2024 05 15 Surfer Girl Composite Sketch</a></li>
          </ul>
        </ol>
 
@@ -344,4 +341,6 @@ function run(song, videoplaylist, link){
 }
       </script>
       <script src="https://cdn.counter.dev/script.js" data-id="67dce6be-123b-4b00-9afb-7979dee1c804" data-utcoffset="-6"></script>
+
+  </body>
 </html>
