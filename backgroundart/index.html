@@ -10,10 +10,12 @@
   <meta name="robots" content="notranslate">
 
   <script>
-  function disableRightClick(event) {
+  function disableLeftClick(event) {
     if (event.button == 2) {
       event.preventDefault(); // Prevent the default right-click behavior
       alert("This page isn't for you to grab copies of, just click links normally.");
+
+      location.reload("https://lwflouisa.github.io/Blogfolio")
       return false;
     }
   }
@@ -122,7 +124,7 @@ li a:hover {
 }
   </style>
 
-  <body oncontextmenu="disableRightClick(event)">
+  <body oncontextmenu="disableLeftClick(event)">
 
   <title>Portfolio</title>
 
@@ -130,6 +132,7 @@ li a:hover {
   <a rel="me" href="https://kpop.social/@LWFlouisa">KPop Social</a>
   <a rel="me" href="https://metalhead.club/@LWFlouisa">Metalhead Club</a>
   <a rel="me" href="https://video.ploud.jp/a/lwflouisa/video-channels">Peertube</a>
+  <a rel="me" href="https://lwflouisa.neocities.org/Blogfolio">Neocities</a>
 
   <meta name="robots" content="noindex">
   <meta name="robots" content="nofollow">
